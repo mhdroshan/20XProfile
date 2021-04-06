@@ -266,17 +266,45 @@ body {
   background-repeat: no-repeat;
 }
 .profile-ring {
-  max-width: 180px;
-  height: 180px;
-  margin: 100px auto 0 auto;
+  max-width: 160px;
+  height: 160px;
+  margin: 117px auto 0 auto;
   z-index: 2;
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   position: relative;
   background-color: transparent;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   background-repeat: no-repeat;
+}
+.profile-ring:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  border-radius: 100%;
+  border-right: 3px solid #1f3b72;
+  border-bottom: 3px solid #1f3b72;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transform: rotate(45deg);
+}
+.profile-ring:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  border-radius: 100%;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transform: rotate(45deg);
 }
 .resume-2 {
   margin: 0 auto;
